@@ -8,8 +8,8 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
 	vertical-align:baseline;
 }
 
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
-	display:block;
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav {
+	display: block;
 }
 
 html, body {
@@ -54,7 +54,7 @@ p {
 
 .mainDetails {
 	padding: 25px 25px;
-	border-bottom: 2px solid #cf8a05;
+	border-bottom: 2px solid #64bce2;
 	background: #ededed;
 }
 
@@ -62,7 +62,7 @@ p {
 	font-size: 3em;
 	font-weight: 700;
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-	margin-bottom: -6px;
+	margin-bottom: -30px;
 }
 
 #name h2 {
@@ -76,7 +76,7 @@ p {
 }
 
 #name {
-	float: left;
+	text-align: Center;
 }
 
 #contactDetails {
@@ -91,19 +91,18 @@ p {
 #contactDetails ul li {
 	margin-bottom: 3px;
 	color: #444;
-  	font-size: 15px;
+	font-size: 15px;
 }
 
 #icon {
-  font-size: 15px;
-  color: #444;
+	font-size: 15px;
+	color: #444;
 }
 
 #contactDetails ul li a, a[href^=tel] {
 	color: #444; 
 	text-decoration: none;
-	-webkit-transition: all .3s ease-in;
-	-moz-transition: all .3s ease-in;
+	-webkit-transition: all .3s ease-in;	
 	-o-transition: all .3s ease-in;
 	-ms-transition: all .3s ease-in;
 	transition: all .3s ease-in;
@@ -115,7 +114,7 @@ p {
 
 section {
 	border-top: 1px solid #dedede;
-	padding: 20px 0 0;
+	padding: 10px 0 ;
 	overflow: hidden;	
 	word-wrap: break-word;	
 }
@@ -143,7 +142,7 @@ section:last-child {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
 	font-style: italic;
 	font-size: 1.8em;
-	color: #cf8a05;
+	color: #64bce2;
 }
 
 
@@ -167,49 +166,48 @@ section:last-child {
 }
 
 .executiveSummary {
-  	list-style-type: disc;
+	list-style-type: disc;
 	margin-bottom: 10px;
 	font-size: 1em;
 	color: #444;
 	list-style-position: inside;
 	text-indent: -1.5em;
 	padding-left: 1em;
- 	margin-left: 10px;
+	margin-left: 10px;
 }
 
 .executiveSummary li {
-  	margin:0 0 6px 0;
+	margin:0 0 6px 0;
 }
 
 .publications {
-  	float: right;
-  	width: 72.5%;
-  	padding-top: 10px;
+	float: right;
+	width: 72.5%;
+	padding-top: 10px;
 }
 
 .publications li {
-  	margin:0 0 6px 0;
+	margin:0 0 6px 0;
 }
 
 .publications ul, ol {
-  	margin-left: 15px;
+	margin-left: 15px;
 }
 
 .keySkills {
 	list-style-type: disc;
 	-webkit-column-count: 2;
-	-moz-column-count: 2;
 	column-count: 2;
 	-webkit-column-gap: 50px;
 	column-gap: 50px;
-	-moz-column-gap: 50px;
+	
 	margin-bottom: 20px;
 	font-size: 1em;
 	color: #444;
 	list-style-position: inside;
 	text-indent: -1.5em;
 	padding-left: 1em;
-
+	
 }
 
 .keySkills ul li {
@@ -234,7 +232,7 @@ section:last-child {
 	width: 48%;
 	height: 55%;
 	margin-right: 10px;
-  	margin-bottom: 10px;
+	margin-bottom: 10px;
 	box-sizing: border-box;
 }
 
@@ -242,15 +240,14 @@ section:last-child {
 /*--------------RESPONSIVE ELEMENTS-------------*/
 @media all and (min-width: 602px) and (max-width: 800px) {
 	.keySkills {
-	-moz-column-count:1;
-	-webkit-column-count:1;
-	column-count:1;
+		-webkit-column-count:1;
+		column-count:1;
 	}
-
-  .box {
+	
+	.box {
 		width: 90%;
 	}
-
+	
 }
 
 @media all and (max-width: 601px) {
@@ -260,10 +257,10 @@ section:last-child {
 		min-width: 280px;
 	}
 	
-  .box {
+	.box {
 		width: 90%;
 	}
-  
+	
 	#name, #contactDetails {
 		float: none;
 		width: 100%;
@@ -279,13 +276,12 @@ section:last-child {
 		float: none;
 		width: 100%;
 	}
-
-	.keySkills {
-		-moz-column-count:1;
+	
+	.keySkills {		
 		-webkit-column-count:1;
 		column-count:1;
 	}
-
+	
 }
 
 @media all and (max-width: 480px) {
@@ -300,15 +296,15 @@ section:last-child {
 	#mainArea {
 		padding: 0 25px;
 	}
-
-  .box {
+	
+	.box {
 		width: 90%;
 	}
-  
+	
 	.keySkills {
-	-moz-column-count:1;
-	-webkit-column-count:1;
-	column-count:1;
+		
+		-webkit-column-count:1;
+		column-count:1;
 	}
 	
 	#name h1 {
@@ -344,27 +340,6 @@ section:last-child {
 	}
 }
 
-@-moz-keyframes reset {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-	}
-}
-
-@-moz-keyframes fade-in {
-	0% {
-		opacity: 0;
-	}
-	40% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
 @keyframes reset {
 	0% {
 		opacity: 0;
@@ -389,12 +364,7 @@ section:last-child {
 .instaFade {
 	-webkit-animation-name: reset, fade-in;
 	-webkit-animation-duration: 1.5s;
-	-webkit-animation-timing-function: ease-in;
-	
-	-moz-animation-name: reset, fade-in;
-	-moz-animation-duration: 1.5s;
-	-moz-animation-timing-function: ease-in;
-	
+	-webkit-animation-timing-function: ease-in;	
 	animation-name: reset, fade-in;
 	animation-duration: 1.5s;
 	animation-timing-function: ease-in;
@@ -403,44 +373,34 @@ section:last-child {
 .quickFade {
 	-webkit-animation-name: reset, fade-in;
 	-webkit-animation-duration: 2.5s;
-	-webkit-animation-timing-function: ease-in;
-	
-	-moz-animation-name: reset, fade-in;
-	-moz-animation-duration: 2.5s;
-	-moz-animation-timing-function: ease-in;
-	
+	-webkit-animation-timing-function: ease-in;	
 	animation-name: reset, fade-in;
 	animation-duration: 2.5s;
 	animation-timing-function: ease-in;
 }
- 
+
 .delayOne {
-	-webkit-animation-delay: 0, .5s;
-	-moz-animation-delay: 0, .5s;
+	-webkit-animation-delay: 0, .5s;	
 	animation-delay: 0, .5s;
 }
 
 .delayTwo {
-	-webkit-animation-delay: 0, 1s;
-	-moz-animation-delay: 0, 1s;
+	-webkit-animation-delay: 0, 1s;	
 	animation-delay: 0, 1s;
 }
 
 .delayThree {
-	-webkit-animation-delay: 0, 1.5s;
-	-moz-animation-delay: 0, 1.5s;
+	-webkit-animation-delay: 0, 1.5s;	
 	animation-delay: 0, 1.5s;
 }
 
 .delayFour {
-	-webkit-animation-delay: 0, 2s;
-	-moz-animation-delay: 0, 2s;
+	-webkit-animation-delay: 0, 2s;	
 	animation-delay: 0, 2s;
 }
 
 .delayFive {
-	-webkit-animation-delay: 0, 2.5s;
-	-moz-animation-delay: 0, 2.5s;
+	-webkit-animation-delay: 0, 2.5s;	
 	animation-delay: 0, 2.5s;
 }
 
