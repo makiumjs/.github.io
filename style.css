@@ -1,24 +1,4 @@
-
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
-	border:0;
-	font:inherit;
-	font-size:100%;
-	margin:0;
-	padding:0;
-	vertical-align:baseline;
-}
-
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav {
-	display: block;
-}
-
-html, body {
-	background: #181818;
-	font-family: 'Lato', helvetica, arial, sans-serif;
-	font-size: 16px;
-	color: #222;
-}
-
+/* summary */
 body em {
 	font-weight: bold;
 	text-decoration: underline;
@@ -40,76 +20,7 @@ p {
 	font-size: 1em;
 	line-height: 1.4em;
 	margin-bottom: 20px;
-	color: #444;
-}
-
-#cv {
-	width: 90%;
-	max-width: 800px;
-	background: #f3f3f3;
-	margin: 30px auto;
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
-
-.mainDetails {
-	padding: 25px 25px;
-	border-bottom: 2px solid #64bce2;
-	background: #ededed;
-}
-
-#name h1 {
-	font-size: 3em;
-	font-weight: 700;
-	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-	margin-bottom: -30px;
-}
-
-#name h2 {
-	font-size: 2em;
-	margin-left: 2px;
-	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-}
-
-#mainArea {
-	padding: 0px 25px;
-}
-
-#name {
-	text-align: Center;
-}
-
-#contactDetails {
-	float: right;
-}
-
-#contactDetails ul {
-	list-style-type: none;
-	margin-top: 2px;
-}
-
-#contactDetails ul li {
-	margin-bottom: 3px;
-	color: #444;
-	font-size: 15px;
-}
-
-#icon {
-	font-size: 15px;
-	color: #444;
-}
-
-#contactDetails ul li a, a[href^=tel] {
-	color: #444; 
-	text-decoration: none;
-	-webkit-transition: all .3s ease-in;	
-	-o-transition: all .3s ease-in;
-	-ms-transition: all .3s ease-in;
-	transition: all .3s ease-in;
-}
-
-#contactDetails ul li a:hover { 
-	color: #cf8a05;
+	
 }
 
 section {
@@ -127,25 +38,115 @@ section:last-child {
 	padding: 20px 0 10px;
 }
 
-.sectionTitle {
-	float: left;
-	width: 25%;
+#mainArea {
+	padding: 0px 25px;
+}
+#cv {
+	width: 90%;
+	max-width: 800px;
+	background: #f3f3f3;
+	margin: 30px auto;
+	
 }
 
-.sectionContent {
+#name {
+	text-align: Center;
+}
+
+
+#name h1 {
+	text-align: center;
+	font-size: 3em;
+	font-weight: 700;
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	padding-bottom: -50px;
+	margin-bottom: -30px;
+	
+}
+
+#name h2 {
+	font-size: 2em;
+	margin-left: 2px;
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+}
+
+
+#contactDetails {
 	float: right;
-	width: 72.5%;
-	padding-top: 10px;
+}
+
+#contactDetails ul {
+	list-style-type: none;
+	margin-top: 2px;
+}
+
+#contactDetails ul li {
+	margin-bottom: 3px;
+	color: black;
+	font-size: 15px;
+}
+
+#icon {
+	font-size: 15px;
+	color: black;
+}
+
+#contactDetails ul li a, a[href^=tel] {
+	color: black;
+	text-decoration: none;
+	-webkit-transition: all .3s ease-in;	
+	-o-transition: all .3s ease-in;
+	-ms-transition: all .3s ease-in;
+	transition: all .3s ease-in;
+}
+
+#contactDetails ul li a:hover { 
+	color: #e0ad1f;
+}
+
+
+.text{
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-style: normal;
+	text-align: center;
+	
+}
+.textedu{
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-style: normal;
+	
+}
+
+.mainDetails {
+	padding: 25px 25px;
+	border-bottom: 2px solid #64bce2;
+	background: #ededed;
+	
+	}
+
+.sectionTitle {
+	text-align: center;
+	margin-top: 10px;
+	
 }
 
 .sectionTitle h1 {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
 	font-style: italic;
 	font-size: 1.8em;
-	color: #64bce2;
+	color: #5385e4;
+	margin-top: 10px;
+	
+
+
 }
 
 
+.sectionContent {
+	text-align: left;
+	width: 100%;
+	padding-top: 10px;
+}
 
 .contentHeader {
 	font-weight: bold;
@@ -168,8 +169,8 @@ section:last-child {
 .executiveSummary {
 	list-style-type: disc;
 	margin-bottom: 10px;
+	margin-top: -10px;
 	font-size: 1em;
-	color: #444;
 	list-style-position: inside;
 	text-indent: -1.5em;
 	padding-left: 1em;
@@ -202,8 +203,7 @@ section:last-child {
 	column-gap: 50px;
 	
 	margin-bottom: 20px;
-	font-size: 1em;
-	color: #444;
+	font-size: 1em;	
 	list-style-position: inside;
 	text-indent: -1.5em;
 	padding-left: 1em;
@@ -218,7 +218,7 @@ section:last-child {
 /*--------------FLEX GRID-------------*/
 
 .container {
-	width: 72.5%;
+	width: 100%;
 	float: right;
 	padding-top: 10px;
 	height: auto;
@@ -267,12 +267,12 @@ section:last-child {
 		text-align: left;
 	}
 	
-	.sectionTitle {
+	.sectionTitle, .Titlesummary {
 		margin-left: -2px;
 		font-size: 1.25em;
 	}
 	
-	.sectionTitle, .sectionContent, .publications, .container {
+	.sectionTitle, .Titlesummary, .sectionContent, .publications, .container {
 		float: none;
 		width: 100%;
 	}
@@ -308,7 +308,7 @@ section:last-child {
 	}
 	
 	#name h1 {
-		line-height: .8em;
+		line-height: 2em;
 		margin-bottom: 4px;
 	}
 }
