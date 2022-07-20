@@ -1,21 +1,7 @@
-
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
-	border:0;
-	font:inherit;
-	font-size:100%;
-	margin:0;
-	padding:0;
-	vertical-align:baseline;
-}
-
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
-	display:block;
-}
-
 html, body {
 	background: #181818;
 	font-family: 'Lato', helvetica, arial, sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 	color: #222;
 }
 
@@ -38,9 +24,8 @@ body i {
 
 p {
 	font-size: 1em;
-	line-height: 1.4em;
-	margin-bottom: 20px;
-	color: #444;
+	margin-top: 10px;
+		
 }
 
 #cv {
@@ -59,7 +44,7 @@ p {
 }
 
 #name h1 {
-	font-size: 3em;
+	font-size: 3.5em;
 	font-weight: 700;
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
 	margin-bottom: -6px;
@@ -85,22 +70,22 @@ p {
 
 #contactDetails ul {
 	list-style-type: none;
-	margin-top: 2px;
+	margin-top: 2.5rem;
 }
 
 #contactDetails ul li {
 	margin-bottom: 3px;
-	color: #444;
+
   	font-size: 15px;
 }
 
 #icon {
   font-size: 15px;
-  color: #444;
+
 }
 
 #contactDetails ul li a, a[href^=tel] {
-	color: #444; 
+	color: black; 
 	text-decoration: none;
 	-webkit-transition: all .3s ease-in;
 	-moz-transition: all .3s ease-in;
@@ -110,14 +95,15 @@ p {
 }
 
 #contactDetails ul li a:hover { 
-	color: #cf8a05;
+	color: #feaa00;
 }
 
 section {
 	border-top: 1px solid #dedede;
-	padding: 20px 0 0;
+	padding: 10px 0 10;
 	overflow: hidden;	
-	word-wrap: break-word;	
+	word-wrap: break-word;
+	display: block;	
 }
 
 section:first-child {
@@ -130,7 +116,7 @@ section:last-child {
 
 .sectionTitle {
 	float: left;
-	width: 25%;
+	width: 25%;	
 }
 
 .sectionContent {
@@ -144,12 +130,10 @@ section:last-child {
 	font-style: italic;
 	font-size: 1.8em;
 	color: #cf8a05;
+	margin-top: 10px;
 }
 
-.sectionContent h2 {
-	font-weight: bold;
-	margin-bottom: 1px;
-}
+
 
 .contentHeader {
 	font-weight: bold;
@@ -164,16 +148,15 @@ section:last-child {
 }
 
 .subDetails {
-	font-size: 0.95em;
-	/*font-style: italic;*/
-	margin-bottom: 2px;
+	font-size: 0.90em;
+	padding-top: 5px;
+	margin-top: 1px;
 }
 
 .executiveSummary {
   	list-style-type: disc;
 	margin-bottom: 10px;
-	font-size: 1em;
-	color: #444;
+	font-size: 1em;	
 	list-style-position: inside;
 	text-indent: -1.5em;
 	padding-left: 1em;
@@ -207,8 +190,7 @@ section:last-child {
 	column-gap: 50px;
 	-moz-column-gap: 50px;
 	margin-bottom: 20px;
-	font-size: 1em;
-	color: #444;
+	font-size: 1em;	
 	list-style-position: inside;
 	text-indent: -1.5em;
 	padding-left: 1em;
@@ -218,14 +200,17 @@ section:last-child {
 .keySkills ul li {
 	margin-bottom: 3px;
 }
-
+.top{
+	text-decoration: none;
+	color: #181818;
+}
 
 /*--------------FLEX GRID-------------*/
 
 .container {
 	width: 72.5%;
 	float: right;
-	padding-top: 10px;
+	padding: 10px 0 10px;
 	height: auto;
 	display: flex;
 	flex-direction: row;
