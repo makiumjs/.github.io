@@ -1,4 +1,10 @@
-/* summary */
+html, body {
+	background: #181818;
+	font-family: 'Lato', helvetica, arial, sans-serif;
+	font-size: 14px;
+	color: #222;
+}
+
 body em {
 	font-weight: bold;
 	text-decoration: underline;
@@ -18,16 +24,86 @@ body i {
 
 p {
 	font-size: 1em;
-	line-height: 1.4em;
-	margin-bottom: 20px;
-	
+	margin-top: 10px;
+		
+}
+
+#cv {
+	width: 90%;
+	max-width: 800px;
+	background: #f3f3f3;
+	margin: 30px auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.mainDetails {
+	padding: 25px 25px;
+	border-bottom: 2px solid #cf8a05;
+	background: #ededed;
+}
+
+#name h1 {
+	font-size: 3.5em;
+	font-weight: 700;
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	margin-bottom: -6px;
+}
+
+#name h2 {
+	font-size: 2em;
+	margin-left: 2px;
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+}
+
+#mainArea {
+	padding: 0px 25px;
+}
+
+#name {
+	float: left;
+}
+
+#contactDetails {
+	float: right;
+}
+
+#contactDetails ul {
+	list-style-type: none;
+	margin-top: 2.5rem;
+}
+
+#contactDetails ul li {
+	margin-bottom: 3px;
+
+  	font-size: 15px;
+}
+
+#icon {
+  font-size: 15px;
+
+}
+
+#contactDetails ul li a, a[href^=tel] {
+	color: black; 
+	text-decoration: none;
+	-webkit-transition: all .3s ease-in;
+	-moz-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
+	-ms-transition: all .3s ease-in;
+	transition: all .3s ease-in;
+}
+
+#contactDetails ul li a:hover { 
+	color: #feaa00;
 }
 
 section {
 	border-top: 1px solid #dedede;
-	padding: 10px 0 ;
+	padding: 10px 0 10;
 	overflow: hidden;	
-	word-wrap: break-word;	
+	word-wrap: break-word;
+	display: block;	
 }
 
 section:first-child {
@@ -38,115 +114,26 @@ section:last-child {
 	padding: 20px 0 10px;
 }
 
-#mainArea {
-	padding: 0px 25px;
-}
-#cv {
-	width: 90%;
-	max-width: 800px;
-	background: #f3f3f3;
-	margin: 30px auto;
-	
-}
-
-#name {
-	text-align: Center;
-}
-
-
-#name h1 {
-	text-align: center;
-	font-size: 3em;
-	font-weight: 700;
-	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-	padding-bottom: -50px;
-	margin-bottom: -30px;
-	
-}
-
-#name h2 {
-	font-size: 2em;
-	margin-left: 2px;
-	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-}
-
-
-#contactDetails {
-	float: right;
-}
-
-#contactDetails ul {
-	list-style-type: none;
-	margin-top: 2px;
-}
-
-#contactDetails ul li {
-	margin-bottom: 3px;
-	color: black;
-	font-size: 15px;
-}
-
-#icon {
-	font-size: 15px;
-	color: black;
-}
-
-#contactDetails ul li a, a[href^=tel] {
-	color: black;
-	text-decoration: none;
-	-webkit-transition: all .3s ease-in;	
-	-o-transition: all .3s ease-in;
-	-ms-transition: all .3s ease-in;
-	transition: all .3s ease-in;
-}
-
-#contactDetails ul li a:hover { 
-	color: #e0ad1f;
-}
-
-
-.text{
-	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-	font-style: normal;
-	text-align: center;
-	
-}
-.textedu{
-	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-	font-style: normal;
-	
-}
-
-.mainDetails {
-	padding: 25px 25px;
-	border-bottom: 2px solid #64bce2;
-	background: #ededed;
-	
-	}
-
 .sectionTitle {
-	text-align: center;
-	margin-top: 10px;
-	
+	float: left;
+	width: 25%;	
+}
+
+.sectionContent {
+	float: right;
+	width: 72.5%;
+	padding-top: 10px;
 }
 
 .sectionTitle h1 {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
 	font-style: italic;
 	font-size: 1.8em;
-	color: #5385e4;
+	color: #cf8a05;
 	margin-top: 10px;
-	
-
-
 }
 
 
-.sectionContent {
-	text-align: left;
-	width: 100%;
-	padding-top: 10px;
-}
 
 .contentHeader {
 	font-weight: bold;
@@ -161,66 +148,69 @@ section:last-child {
 }
 
 .subDetails {
-	font-size: 0.95em;
-	/*font-style: italic;*/
-	margin-bottom: 2px;
+	font-size: 0.90em;
+	padding-top: 5px;
+	margin-top: 1px;
 }
 
 .executiveSummary {
-	list-style-type: disc;
+  	list-style-type: disc;
 	margin-bottom: 10px;
-	margin-top: -10px;
-	font-size: 1em;
+	font-size: 1em;	
 	list-style-position: inside;
 	text-indent: -1.5em;
 	padding-left: 1em;
-	margin-left: 10px;
+ 	margin-left: 10px;
 }
 
 .executiveSummary li {
-	margin:0 0 6px 0;
+  	margin:0 0 6px 0;
 }
 
 .publications {
-	float: right;
-	width: 72.5%;
-	padding-top: 10px;
+  	float: right;
+  	width: 72.5%;
+  	padding-top: 10px;
 }
 
 .publications li {
-	margin:0 0 6px 0;
+  	margin:0 0 6px 0;
 }
 
 .publications ul, ol {
-	margin-left: 15px;
+  	margin-left: 15px;
 }
 
 .keySkills {
 	list-style-type: disc;
 	-webkit-column-count: 2;
+	-moz-column-count: 2;
 	column-count: 2;
 	-webkit-column-gap: 50px;
 	column-gap: 50px;
-	
+	-moz-column-gap: 50px;
 	margin-bottom: 20px;
 	font-size: 1em;	
 	list-style-position: inside;
 	text-indent: -1.5em;
 	padding-left: 1em;
-	
+
 }
 
 .keySkills ul li {
 	margin-bottom: 3px;
 }
-
+.top{
+	text-decoration: none;
+	color: #181818;
+}
 
 /*--------------FLEX GRID-------------*/
 
 .container {
-	width: 100%;
+	width: 72.5%;
 	float: right;
-	padding-top: 10px;
+	padding: 10px 0 10px;
 	height: auto;
 	display: flex;
 	flex-direction: row;
@@ -232,7 +222,7 @@ section:last-child {
 	width: 48%;
 	height: 55%;
 	margin-right: 10px;
-	margin-bottom: 10px;
+  	margin-bottom: 10px;
 	box-sizing: border-box;
 }
 
@@ -240,14 +230,15 @@ section:last-child {
 /*--------------RESPONSIVE ELEMENTS-------------*/
 @media all and (min-width: 602px) and (max-width: 800px) {
 	.keySkills {
-		-webkit-column-count:1;
-		column-count:1;
+	-moz-column-count:1;
+	-webkit-column-count:1;
+	column-count:1;
 	}
-	
-	.box {
+
+  .box {
 		width: 90%;
 	}
-	
+
 }
 
 @media all and (max-width: 601px) {
@@ -257,31 +248,32 @@ section:last-child {
 		min-width: 280px;
 	}
 	
-	.box {
+  .box {
 		width: 90%;
 	}
-	
+  
 	#name, #contactDetails {
 		float: none;
 		width: 100%;
 		text-align: left;
 	}
 	
-	.sectionTitle, .Titlesummary {
+	.sectionTitle {
 		margin-left: -2px;
 		font-size: 1.25em;
 	}
 	
-	.sectionTitle, .Titlesummary, .sectionContent, .publications, .container {
+	.sectionTitle, .sectionContent, .publications, .container {
 		float: none;
 		width: 100%;
 	}
-	
-	.keySkills {		
+
+	.keySkills {
+		-moz-column-count:1;
 		-webkit-column-count:1;
 		column-count:1;
 	}
-	
+
 }
 
 @media all and (max-width: 480px) {
@@ -296,19 +288,19 @@ section:last-child {
 	#mainArea {
 		padding: 0 25px;
 	}
-	
-	.box {
+
+  .box {
 		width: 90%;
 	}
-	
+  
 	.keySkills {
-		
-		-webkit-column-count:1;
-		column-count:1;
+	-moz-column-count:1;
+	-webkit-column-count:1;
+	column-count:1;
 	}
 	
 	#name h1 {
-		line-height: 2em;
+		line-height: .8em;
 		margin-bottom: 4px;
 	}
 }
@@ -329,6 +321,27 @@ section:last-child {
 }
 
 @-webkit-keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes reset {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes fade-in {
 	0% {
 		opacity: 0;
 	}
@@ -364,7 +377,12 @@ section:last-child {
 .instaFade {
 	-webkit-animation-name: reset, fade-in;
 	-webkit-animation-duration: 1.5s;
-	-webkit-animation-timing-function: ease-in;	
+	-webkit-animation-timing-function: ease-in;
+	
+	-moz-animation-name: reset, fade-in;
+	-moz-animation-duration: 1.5s;
+	-moz-animation-timing-function: ease-in;
+	
 	animation-name: reset, fade-in;
 	animation-duration: 1.5s;
 	animation-timing-function: ease-in;
@@ -373,34 +391,44 @@ section:last-child {
 .quickFade {
 	-webkit-animation-name: reset, fade-in;
 	-webkit-animation-duration: 2.5s;
-	-webkit-animation-timing-function: ease-in;	
+	-webkit-animation-timing-function: ease-in;
+	
+	-moz-animation-name: reset, fade-in;
+	-moz-animation-duration: 2.5s;
+	-moz-animation-timing-function: ease-in;
+	
 	animation-name: reset, fade-in;
 	animation-duration: 2.5s;
 	animation-timing-function: ease-in;
 }
-
+ 
 .delayOne {
-	-webkit-animation-delay: 0, .5s;	
+	-webkit-animation-delay: 0, .5s;
+	-moz-animation-delay: 0, .5s;
 	animation-delay: 0, .5s;
 }
 
 .delayTwo {
-	-webkit-animation-delay: 0, 1s;	
+	-webkit-animation-delay: 0, 1s;
+	-moz-animation-delay: 0, 1s;
 	animation-delay: 0, 1s;
 }
 
 .delayThree {
-	-webkit-animation-delay: 0, 1.5s;	
+	-webkit-animation-delay: 0, 1.5s;
+	-moz-animation-delay: 0, 1.5s;
 	animation-delay: 0, 1.5s;
 }
 
 .delayFour {
-	-webkit-animation-delay: 0, 2s;	
+	-webkit-animation-delay: 0, 2s;
+	-moz-animation-delay: 0, 2s;
 	animation-delay: 0, 2s;
 }
 
 .delayFive {
-	-webkit-animation-delay: 0, 2.5s;	
+	-webkit-animation-delay: 0, 2.5s;
+	-moz-animation-delay: 0, 2.5s;
 	animation-delay: 0, 2.5s;
 }
 
